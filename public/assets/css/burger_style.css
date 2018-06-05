@@ -1,0 +1,44 @@
+body {
+    background-image: url("../img/spaceburger.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: 100% 100%;
+}
+
+#burgerRow {
+    -webkit-flex: 1; /* Safari 6.1+ */
+    flex: 1;
+}
+
+div.transbox {
+    margin: 2%;
+    padding: 30px;
+    background-color: rgba(123,189,225,0.6);
+    height: 70vh;
+    display: -webkit-flex;
+    -webkit-align-items: center; 
+    display: flex;
+    align-items: center;
+}
+
+div.transbox h2, h3, p {
+    color: white;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+#devoured, #notDevoured {
+    text-align: left;
+}
+
+.devourbtn {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+}
