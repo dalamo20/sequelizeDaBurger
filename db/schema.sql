@@ -1,4 +1,5 @@
-USE nd7zp542ak0cmaft;
+CREATE DATABASE burger_db;
+USE burger_db;
 
 CREATE TABLE burgers
 (

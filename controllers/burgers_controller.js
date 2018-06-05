@@ -3,7 +3,7 @@
 
 // controlls all functions for one tables routes
 var express = require('express');
-var burger = require("../models/burger");
+var burger = require("../models/burgers");
 // all api routes
 var router = express.Router();
 
