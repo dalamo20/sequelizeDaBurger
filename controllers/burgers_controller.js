@@ -3,7 +3,7 @@
 
 // controlls all functions for one tables routes
 var express = require('express');
-var db = require("../models/burgers");
+var db = require("../models");
 // all api routes
 var router = express.Router();
 
@@ -41,16 +41,19 @@ router.post("/burgers/insert", function (req, res) {
 
 
 //router.put("route", function)
-//route/: <-- the : allows you to create a URL with 
+//route/: <-- the : allows you to create a URL with optional use of an id
 router.put("/burgers/:id", function (req, res) {
     // var updateBurger = { burger_name: "" };
+    //.update() is sequelize function to UPDATE existing info in our database 
     db.Burger.update({
-        devoured: 0
+        //in update function - everything you want to update has to be its own object
+        devoured: 1
      }, {
          where: {
              id: req.params.id
          }
      }).then(function (data) {
+         //this is sequelize syntax for all is good 
         res.sendStatus(200);
     });
 });
